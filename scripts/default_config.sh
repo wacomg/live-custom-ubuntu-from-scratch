@@ -49,10 +49,10 @@ function customize_image() {
     apt-get install -y \
     # clamav-daemon \
     # terminator \
-    apt-transport-https \
+    # apt-transport-https \
     curl \
     vim \
-    nano \
+    # nano \
     less \
     openssh-server \
     openssh-client
