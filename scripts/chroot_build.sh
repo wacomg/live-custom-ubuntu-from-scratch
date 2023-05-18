@@ -101,7 +101,7 @@ function install_pkg() {
     # install live packages
     apt-get install -y \
     sudo \
-    ubuntu-standard \
+    ubuntu-minimal \
     casper \
     discover \
     laptop-detect \
