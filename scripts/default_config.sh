@@ -46,16 +46,7 @@ function customize_image() {
     # ubuntu-gnome-wallpapers
 
     # useful tools
-    apt-get install -y \
-    # clamav-daemon \
-    # terminator \
-    # apt-transport-https \
-    curl \
-    vim \
-    # nano \
-    less \
-    openssh-server \
-    openssh-client
+    apt-get install -y curl vim less openssh-server openssh-client
 
     # purge
     apt-get purge -y \
