@@ -7,7 +7,7 @@
 
 # The version of Ubuntu to generate.  Successfully tested: bionic, cosmic, disco, eoan, focal, groovy, jammy
 # See https://wiki.ubuntu.com/DevelopmentCodeNames for details
-export TARGET_UBUNTU_VERSION="jammy"
+export TARGET_UBUNTU_VERSION="bionic"
 
 # The Ubuntu Mirror URL. It's better to change for faster download.
 # More mirrors see: https://launchpad.net/ubuntu/+archivemirrors
@@ -40,20 +40,22 @@ export TARGET_PACKAGE_REMOVE="
 # present on the installed system.
 function customize_image() {
     # install graphics and desktop
-    apt-get install -y \
-    plymouth-theme-ubuntu-logo \
-    ubuntu-gnome-desktop \
-    ubuntu-gnome-wallpapers
+    # apt-get install -y \
+    # plymouth-theme-ubuntu-logo \
+    # ubuntu-gnome-desktop \
+    # ubuntu-gnome-wallpapers
 
     # useful tools
     apt-get install -y \
-    clamav-daemon \
-    terminator \
+    # clamav-daemon \
+    # terminator \
     apt-transport-https \
     curl \
     vim \
     nano \
-    less
+    less \
+    openssh-server \
+    openssh-client
 
     # purge
     apt-get purge -y \
